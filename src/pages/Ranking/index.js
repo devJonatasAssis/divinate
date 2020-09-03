@@ -16,6 +16,7 @@ export default function Ranking({ navigation }) {
             const data = realm.objects("Ranking").sorted("plays", false);
             setRanking(data);
         }
+        loadRanking();
     }, []);
 
     return (
